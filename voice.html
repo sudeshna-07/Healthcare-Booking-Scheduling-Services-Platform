@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Voice Appointment Booking</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>Smart Hospital Voice Booking</header>
+
+<div class="container">
+
+<h2>Book Appointment Using Voice</h2>
+
+<label>Name</label>
+<input type="text" id="name">
+
+<label>Age</label>
+<input type="number" id="age">
+
+<label>Select Department</label>
+<select id="department">
+<option>General</option>
+<option>Cardiology</option>
+<option>Orthopedic</option>
+<option>Neurology</option>
+</select>
+
+<label>Describe your problem</label>
+<input type="text" id="problem">
+
+<button class="voice-btn" type="button" onclick="startVoice()">🎤 Speak Problem</button>
+
+<p id="listening"></p>
+
+<label>Appointment Date</label>
+<input type="date" id="date">
+
+<br><br>
+
+<input type="checkbox" id="senior">
+<label>Senior Citizen Assistance</label>
+
+<br><br>
+
+<button onclick="bookAppointment()">Book Appointment</button>
+
+<div id="result"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

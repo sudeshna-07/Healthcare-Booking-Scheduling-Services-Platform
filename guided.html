@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Guided Booking</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>Book Your Appointment</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="booking.html">Book Appointment</a>
+</nav>
+
+<div class="container">
+
+<h2>Step-by-Step Booking</h2>
+
+<label>Patient Name</label>
+<input type="text" id="name">
+
+<label>Select Department</label>
+<select id="department">
+<option>General Medicine</option>
+<option>Cardiology</option>
+<option>Dermatology</option>
+<option>Orthopedics</option>
+</select>
+
+<label>Choose Date</label>
+<input type="date" id="date">
+
+<button onclick="confirmAppointment()">Confirm Appointment</button>
+
+</div>
+
+</body>
+</html>
